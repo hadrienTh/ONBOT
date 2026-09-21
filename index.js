@@ -65,3 +65,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
 });
 
 client.login(process.env.TOKEN);
+
+const app = express();
+app.get('/', (req, res) => res.send('Le bot tourne.'));
+app.listen(process.env.PORT || 3000);
