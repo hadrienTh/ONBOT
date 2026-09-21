@@ -1,4 +1,5 @@
 require('dotenv').config();
+const express = require('express');
 const { Client, GatewayIntentBits, Events, SlashCommandBuilder } = require('discord.js');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
